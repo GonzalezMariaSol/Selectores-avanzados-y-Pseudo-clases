@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    background-color: rgb(148, 147, 147);
+}
+.FatherContenedor{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(168, 154, 248);
+}
+.FatherContenedor div{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255, 121, 121);
+    margin: 100px 0px 100px 0px;
+    color: black;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.FatherContenedor > div > div{                              
+    background-color: rgb(255, 253, 126);
+    box-sizing: border-box;
+    margin: 30px 0px 30px 0px;
+    font-size: 15px;
+    width: 160px;
+    height: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/*PSEUDO CLASES (ETIQUETA O CLASE O ID) SEGUIDO DE DOBLE PUNTO :*/
+
+
+div:first-child{
+    background-color: rgb(149, 255, 162);
+}
+
+div:last-child{
+    background-color:white;
+}
+
+/*NTH CHILD ES OTRO PSEUDO CLASE*/
+
+div:nth-child(3){
+    background-color:rgb(109, 216, 255);
+}
+
+div:nth-child(odd){
+    color: rgb(255, 0, 251);
+    font-style:bold;
+}
+/*los numeros impares son de los child el UNO-TRES y CINCO y de los grandson, son los primeros y terceros nietos de cada CHILD*/
+
+div:nth-child(even){
+    border-radius: 30px;
+}
+/*los numeros PARES son de los child el DOS-CUATRO y de los granson, son los segundos nietos de cada CHILD*/
+
+.divDos:hover {
+    background-color: brown;
+}
+
+a:active{
+    color: rgb(28, 255, 92);
+}
+
+a:visited{
+    color: white;
+}
+
+
+
+/*PSEUDO ELEMENTOS SEGUIDO DE DOS DOBLE PUNTO ::  */
+
+div::first-letter{
+    color: aqua;
+    font-size: 25px;
+}
+div::selection{
+    background-color:rgb(30, 126, 76)
+}
+
+.divDos::before{
+    content:"soy un before  "
+}
+
+

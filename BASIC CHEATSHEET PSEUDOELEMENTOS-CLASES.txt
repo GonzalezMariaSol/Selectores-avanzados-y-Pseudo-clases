@@ -1,0 +1,40 @@
+                                                PSEUDO-CLASES : (un solo doble puntos)
+
+
+"al PRIMER hijo de (etiqueta-clase o id) quiero modificarle esto"
+      div:first-child{lo que se modificara}
+
+"al SEGUNDO hijo de (etiqueta-clase o id) quiero modificarle esto"
+      div:last-child{lo que se modificara}
+
+"al HIJO numero TANTO (hijos que esten LUEGO del primero y ANTES del ultimo) de (etiqueta-clase o id) quiero modificarle esto"
+      div:nth(n de numero y th de la terminacion en ingles de 5th 6th 10th etc)-child(y el numero del child)
+                                                   se veria como=
+      div:nth-child(3){lo que se modificara}
+
+"a los hijos IMPARES (odd en ingles) de (etiqueta-clase o id) quiero modificarle esto"
+      div:nth-child(odd){lo que se modificara}
+
+"siempre que pase el usuario sobre algo, quiero que pase algo"
+      div:hover{lo que quiero que pase}
+
+
+
+                         ----------------------------------------------------------------------------------------
+
+
+                                                 PSEUDO-ELEMENTOS :: (dos doble puntos)
+
+
+"la PRIMER letra de todos los divs (etiqueta-clase-id-hijo o nieto) quiero modificarle esto"
+      div::first-letter{lo que se modificara}
+
+"cuando el usuario seleccione una parte de un texto quiero que cambie de color, que se 'resalte' "
+      div::selection{background-color:yellow}
+
+
+
+
+
+
+
